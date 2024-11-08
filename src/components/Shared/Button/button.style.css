@@ -1,0 +1,30 @@
+.btn-cv {
+    padding: .6rem 1rem;
+    border-radius: .3rem;
+    max-width:fit-content;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    background: var(--bg-preset-2);
+    background: transparent;
+    outline: 2px solid var(--bg-preset-2);
+    color: var(--text-preset-5);
+    transition:  color .3s ease, outline .3s ease, background 0.3s ease;
+
+  }
+
+  .btn-cv:hover, .btn-cv:disabled {
+    background: var(--bg-preset-2);
+    color: var(--text-preset-6);
+  }
+
+  .btn-cv:disabled {
+    opacity: .75;
+    cursor: unset;
+  }
+
+  

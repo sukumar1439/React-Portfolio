@@ -1,0 +1,156 @@
+.skill-div {
+    margin-bottom: 40px;
+}
+
+.edu-div {
+    padding: 20px;
+}
+
+.edu-div:hover {
+    background: var(--accent-preset-4);
+}
+
+.education {
+    font-size: 1rem;
+}
+
+.institution {
+font-weight: 500;
+}
+
+.degree {
+    margin: .5rem 0;
+    color: var(--text-preset-3);
+}
+
+.timespan {
+    font-style: italic;
+    color: var(--text-preset-5);
+
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center; 
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+    }
+}
+
+.flip-container {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    position: relative;
+    perspective: 800px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-container::before {
+    content: '';
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    background: var(--bg-preset-1);
+    transition: background .3s ease-in-out;
+}
+
+.flip-div {
+    height: 90%;
+    width: 90%;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.front, .back {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.back {
+    background: var( --gradient-preset-4);
+    opacity: .8;
+    color: var(--bg-preset-1);
+    font-weight: 800;
+    transform: rotateY(180deg);
+}
+
+.front img {
+    object-fit: contain;
+    height: 50%;
+    width: 50%;
+}
+
+.flip-container:hover > .flip-div {
+    transform: rotateY(180deg);
+    transition: transform .5s;
+}
+
+.more-skills {
+    width: 100%;
+    grid-column: 1 / -1;
+}
+
+.more-skills p {
+    font-size: 1.1rem;
+}
+
+.skill-list {
+    width: 100%;
+    background: var(--bg-preset-3);
+    transition: background .3s ease-in-out;
+    padding: 2.5rem 2rem;
+    margin-top: 1rem;
+    display: flex;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.skill-slide {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    animation: sliderOn 10s linear infinite;
+}
+
+.skill-list img {
+    object-fit: contain;
+    width: 3rem;
+    height: 100%;
+    margin: 0 1rem;
+}
+
+.icon-name {
+    top: unset;
+    left: unset;
+    bottom: -3.5rem;
+    font-size: .8rem;
+}
+
+@keyframes sliderOn {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

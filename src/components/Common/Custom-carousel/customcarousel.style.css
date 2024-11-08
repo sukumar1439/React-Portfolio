@@ -1,0 +1,51 @@
+.carousel-div {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    transition: transform .3s
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+  }
+  
+  .indicator-buttons {
+    border: none;
+    cursor: pointer;
+    background: none;
+  }
+
+  .indicator-icon {
+    color: var(--accent-preset-5);
+    transition: transform .3s ease;
+&:hover {
+    color: var(--text-preset-5);
+    transform: scale(1.2);
+}
+}
+
+.bullets {
+  height: 12px;
+  width: 30px;
+  border-radius: calc(9999px);
+  background: var(--accent-preset-5);
+  border: 2px solid var(--accent-preset-5);
+  transition: transform .3s ease;
+  &:hover {
+    border-color: var(--text-preset-5);
+  background: var(--text-preset-5);
+
+  }
+}

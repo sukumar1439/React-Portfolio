@@ -1,0 +1,35 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-preset-3);
+    color: var(--text-preset-6);
+    height: fit-content;
+    padding: 1rem 15rem;
+}
+
+.cpyryt {
+    font-weight: 300;
+  text-wrap: nowrap;
+}
+
+.icon-div {
+    display: inherit;
+    gap: 4rem;
+}
+
+.icon-div a {
+    cursor: pointer;
+    color: var(--text-preset-6);
+    &:hover {
+      scale: 1.2;
+    transition: scale ease-in-out .3s;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .footer {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+  }

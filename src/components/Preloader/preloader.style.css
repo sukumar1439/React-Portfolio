@@ -1,0 +1,147 @@
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    transform-origin: top left;
+    animation: background 2s infinite;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.preloader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.preloader::before {
+    content: 'Loading..';
+    position: absolute;
+    top: 50%;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    font-weight: 600;
+    z-index: 10;
+    border: 10px solid transparent;
+    border-radius: 50%;
+    animation: rotate 2s ease infinite;
+   
+}
+
+@keyframes rotate {
+    from {
+        border-top-color: transparent;
+    }
+    to {
+        border-top-color: var(--loader);
+    }
+    
+}
+
+@keyframes background {
+    0%, 100% {
+    background: var(--loader-1);
+
+    }
+    50% {
+        background: var(--loader-10);
+    }
+}
+
+.strip-1,.strip-2,.strip-3,.strip-4,.strip-5 {
+width: 20%;
+position: relative;
+}
+
+.strip-1::before,.strip-2::before,.strip-3::before,.strip-4::before,.strip-5::before, .strip-1::after,.strip-2::after,.strip-3::after,.strip-4::after,.strip-5::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    transform-origin: top;
+    visibility: hidden;
+    animation: roll 2s infinite;
+}
+
+.strip-1::before,.strip-2::before,.strip-3::before,.strip-4::before,.strip-5::before {
+    left: 0;
+}
+
+.strip-1::after,.strip-2::after,.strip-3::after,.strip-4::after,.strip-5::after {
+    right:  0; 
+}
+
+.strip-1::before {
+    background: var(--loader-1);
+}
+
+.strip-1::after {
+    background: var(--loader-2);
+    animation-delay: 0.1s;
+}
+
+.strip-2::before {
+    background: var(--loader-3);
+    animation-delay: 0.2s;
+}
+
+.strip-2::after {
+    background: var(--loader-4);
+    animation-delay: 0.3s;
+}
+
+.strip-3::before {
+    background: var(--loader-5);
+    animation-delay: 0.4s;
+}
+
+.strip-3::after {
+    background: var(--loader-6);
+    animation-delay: 0.5s;
+}
+
+.strip-4::before {
+    background: var(--loader-7);
+    animation-delay: 0.6s;
+}
+
+.strip-4::after {
+    background: var(--loader-8);
+    animation-delay: 0.7s;
+}
+
+.strip-5::before {
+    background: var(--loader-9);
+    animation-delay: 0.8s;
+}
+
+.strip-5::after {
+    background: var(--loader-10);
+    animation-delay: 0.9s;
+}
+
+@keyframes roll {
+    0% {
+        transform: scale(1,0);
+        visibility: visible;
+    }
+    50% {
+        transform: scale(1,1);
+        visibility: visible;
+    }
+    100% {
+        transform: translateY(100%);
+        visibility: visible;
+    }
+}
+
+@media (max-width: 500px) {
+    .preloader {
+        height: 100%;
+    }
+    .strip-1::before,.strip-2::before,.strip-3::before,.strip-4::before,.strip-5::before, .strip-1::after,.strip-2::after,.strip-3::after,.strip-4::after,.strip-5::after {
+        height: 100%;
+    }
+}

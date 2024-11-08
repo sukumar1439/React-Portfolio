@@ -1,0 +1,35 @@
+.main-container {
+    padding: 5% 15%;    
+  }
+
+  .seperator {
+    background-image: url(../../../assests/images/bline.png);
+    background-repeat: repeat-x;
+    background-position: 50% ;
+    background-size: auto .5rem;
+    padding: 1rem;
+    margin: 0 15%;
+    filter: invert(1);
+  }
+
+  [data-theme='light'] {
+    .seperator {
+        filter: opacity(0);
+    }
+  }
+
+
+@media (max-width: 480px) {
+    .main-container {
+        padding: 2% 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        padding:  5% 2%;
+    }
+    .seperator {
+        margin: 0 5%;
+    }
+}

@@ -1,0 +1,37 @@
+.scrollUp {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10%;
+    border: none;
+    background: var(--accent-preset-5);
+    color: var(--bg-preset-1);
+    visibility: hidden;
+    opacity: 0;
+    rotate: -135deg;
+    cursor: pointer;
+    transform: translateX(-100%);
+    transition-delay: 0;
+    transition: transform 1s, visibility 1s, opacity 1s;
+}
+
+.scroll-visible {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-icon {
+    transform: translate(0, 0);
+    transition: transform 1s ease;
+
+}
+
+.scrollUp:active, .scrollUp:focus {
+    box-shadow: 2px 2px 15px 2px var(--text-preset-5);
+    .scroll-icon {
+    transform: translate(100%, 100%);
+   }
+}

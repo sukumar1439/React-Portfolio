@@ -1,0 +1,83 @@
+#resume {
+    background: var(--bg-preset-4);
+    transition: background .3s ease-in-out;
+}
+
+.exp-detail {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    column-gap: 40px;
+    padding: 1rem;
+    border-radius: 13px;
+    outline-color: var(--text-preset-1);
+    transition: all .3s ease;
+}
+
+.exp-detail:hover {
+    background: var(--accent-preset-4);
+    box-shadow: var(-accent-preset-4) 0px 7px 29px 0px;
+}
+
+.company {
+    padding: 0 20px;
+}
+
+.position{
+    margin-bottom: 15px;
+}
+
+.status {
+    margin-top: 10px;
+    color: var(--text-preset-6);
+    background-color: var(--accent-preset-2);
+    border-radius: 5px;
+    padding: 6px 8px;
+    width: fit-content;
+    font-weight: 600;
+}
+
+.exp-para {
+    line-height: 2;
+    margin-bottom: 50px;
+    font-size: 1rem;
+    color: var(--text-preset-3);
+}
+
+.stepper {
+    position: relative;
+    padding:  40px 0;
+    margin: 20px 0;
+    width: 1px;
+    background-color: var(--text-preset-2);
+    margin-left: 40px;
+}
+
+.stepper::before, .stepper::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--accent-preset-2)
+}
+
+.stepper::before {
+    left: -2px;
+    top: 0; 
+
+}
+
+.stepper::after {
+    right: -2px;
+    bottom: 0;
+}
+
+@media (max-width: 480px) {
+    .exp-detail {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+    .stepper{
+        display: none;
+    }
+}

@@ -1,0 +1,49 @@
+.project-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--text-preset-5);
+    margin: 0;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.space {
+    column-gap: 2%;
+    white-space: initial;
+}
+
+.context-div {
+    justify-content: center;
+    padding: 0 10px;
+    gap: 1rem;
+}
+
+.context-div h3 {
+    width: 80%;
+}
+.project-context {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 1rem;
+    background: var(--accent-preset-3);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.project-context img {
+    object-fit: contain;
+    height: 75%;
+    width: 75%;
+}
+
+.tool-div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.img-div {
+    min-height: 20rem;
+    height: 100%;
+}

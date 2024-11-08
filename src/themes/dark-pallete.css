@@ -1,0 +1,30 @@
+[data-theme='dark'] {
+    --bg-preset-1 : #1B262C;
+    --bg-preset-2 : #3282B8;
+    --bg-preset-3 : #0F1A20;
+    --bg-preset-4: #1B262C;
+
+    --text-preset-1 : #ffffff;
+    --text-preset-2 : #F5F5F5;
+    --text-preset-3 : #AAAAAA;
+    --text-preset-4 : #EBFFFB;
+    --text-preset-5 : #BBE1FA;
+    --text-preset-6 : #F5F5F5;
+    --text-preset-7 : #BBE1FA;
+    
+
+    --gradient-preset-1 : linear-gradient(20deg,#6f2231b2, #950740, #C3073F, #9D0B28);
+    --gradient-preset-2: linear-gradient(330deg, #0F4C75, #3282B8 , #BBE1FA);
+    --gradient-preset-3: linear-gradient(225deg, #0F4C75, #3282B8 , #BBE1FA);
+    --gradient-preset-4: linear-gradient(135deg, #3282B8 , #BBE1FA);
+
+
+    --accent-preset-1 : rgba(65, 133, 152, 0.2);
+    --accent-preset-2 : #C3073F;
+    --accent-preset-3 : #A52A2A;
+    --accent-preset-4 : rgba(61, 59, 64, 0.2);
+    --accent-preset-5 : #3282B8;
+    --accent-preset-6 : rgba(62, 62, 74, 0.2);
+    --accent-preset-7 : #EBFFFB;
+
+}

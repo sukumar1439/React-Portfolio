@@ -1,0 +1,64 @@
+{
+    "socialMedia": {
+      "twitter": "https://twitter.com/",
+      "github": "https://github.com/sukumar1439",
+      "instagram": "https://instagram.com/",
+      "linkedin": "https://www.linkedin.com/in/kuppili-sainiteeshkumar-2a"
+    },
+    "bio": {
+      "name": "K Sai Nitheesh Kumar",
+      "age": "24",
+      "mob": " +91 6301-420-739",
+      "mail": "sainiteeshkumar.kuppili2000@gmail.com",
+      "address1": "Andhra Pradesh, India",
+      "address2": "Dr-No:14-4-89, Petrolbunk backside road, Peda-Boddepalle Jn, Narsipatnam, AndhraPradesh 530016",
+      "hobby": ["Learn New mobile Tech", "Music", "Frontend Frameworks","Watching Horror Movies"],
+      "intro1": "Hello, I'm K Sai Nitheesh Kumar, a Software(UI/UX Developer) with frontend expertise in India. I like work with new people. New people new Experiences.",
+      "intro2": "Begginer in JavaScript libraries such as React.js, popular frameworks including Material-UI & Bootstrap. Proficient in core web technologies, including JavaScript, HTML5, CSS."
+    },
+    "about": {
+      "title1": "Web Design",
+      "info1": "I improve and refine your online presence. Your website acts as the main entry point to your business and a key source of revenue.",
+      "title2": "App Development",
+      "info2": "Design and build custom digital solutions tailored to meet the clients' needs, ensuring seamless functionality and user-friendly experiences.",
+      "title3": "UI/UX Design",
+      "info3": "Seamlessly blend UI/UX design principles with cutting-edge technologies to elevate your digital products."
+    },
+    "education": [
+      {
+        "id": 1,
+        "institue": "SPACES Degree College",
+        "degree": "B.Sc(Computer Science) Undergraduate",
+        "duration": "2018 - 2021"
+      },
+      {
+        "id": 2,
+        "institue": "Tulasi Murari Jr college",
+        "degree": "Intermediate - MPC",
+        "duration": "2016 - 2018"
+      },
+      {
+        "id": 3,
+        "institue": "Saint Judes English Medium",
+        "degree": "State Board - High School",
+        "duration": "2015-2016"
+      }
+    ],
+    "experience": [
+      {
+        "id": 1,
+        "position": "Technical Support Associate",
+        "duration": "Dec 2023 - Apr 2024",
+        "status": "Full Time",
+        "companyName": "Tech Mahindra",
+        "workInfo": "Worked for Ebay Inc. as a Technical specialist and Customer support."
+      }
+    ],
+    "projects_url": {
+      "blogSpace": "https://blog-space-phi.vercel.app/",
+      "plantopia": "https://plantopia-org.vercel.app/",
+      "biteCircle": "https://sukumar1439.github.io/BiteCircle/",
+      "portfolio": "https://sukumar1439.github.io/Portfolio/",
+      "ReactFlowTemplate": "https://sukumar1439.github.io/React-Flow-Template/"
+    }
+  }

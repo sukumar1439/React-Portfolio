@@ -1,0 +1,32 @@
+[data-theme='light'] {
+    --bg-preset-1 : #ffffff;
+    --bg-preset-2 : #ED7D31;
+    --bg-preset-3 : #abb8c3;
+    --bg-preset-4: #f7f7ff;
+
+    --text-preset-1 : #F38A3F;
+    --text-preset-2 : #555;
+    --text-preset-3 : #543A3A;
+    --text-preset-4 : #33313B;
+    --text-preset-5 : #E36414;
+    --text-preset-6 : #f7f7ff;
+    --text-preset-7 : #9A031E;
+
+
+    --gradient-preset-1 : linear-gradient(20deg, #5E4DB2, #9F8FEF , #DFD8FD);
+    --gradient-preset-2: linear-gradient(330deg,#A54800  ,#F38A3F, #FEC195);
+    --gradient-preset-3 : linear-gradient(225deg,#FB8B24, #E36414, #9A031E);
+
+
+    --gradient-preset-4: linear-gradient(135deg, #E36414 , #FEC195);
+
+
+    --accent-preset-1 : #E6E6FA;
+    --accent-preset-2 : #8F7EE7;
+    --accent-preset-3 : #9F8FEF;
+    --accent-preset-4: rgba(215, 208, 250, 0.2); 
+    --accent-preset-5 : #FFA500;  
+    --accent-preset-6 : #f9f8f5;
+    --accent-preset-7 : #8F7EE7;
+
+}

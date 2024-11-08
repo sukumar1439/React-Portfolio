@@ -1,0 +1,195 @@
+@import url(./themes/dark-palette.css);
+@import url(./themes/light-palette.css);
+@import url(./themes/default-palette.css);
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+  position: relative;
+  font-family: "Space Grotesk", sans-serif;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  background-color: var(--bg-preset-1);
+  color: var(--text-preset-2);
+  transition: all .3s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--loader-4) transparent;
+}
+
+.App {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.75s, visibility 0.75s, display 0.75s;
+}
+
+.App-visible {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  transition-delay: 0.85s;
+}
+
+.App::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  aspect-ratio: 1;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 150%;
+  z-index: -5;
+  background-color: transparent;
+  transform-origin: right top;
+  animation: bubble 4s ease-out forwards, wobble 60s 4.5s ease infinite;
+  box-shadow:  15rem -5rem 10rem 5rem inset var(--accent-preset-4);
+  transition: box-shadow .3s ease-in;
+}
+
+@keyframes bubble {
+  0%, 100% {
+    transform: scale(1.1,1) ;
+  }
+  50% {
+    transform: scale(1.2) ;
+  }
+}
+
+@keyframes wobble {
+  0%,100% {
+    transform: scale(1,1) ;
+  }
+  50% {
+    transform: scale(1.2,1.2) ;
+  }
+}
+
+.ask {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--accent-preset-5);
+  font-family: "League Spartan", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.ask::before {
+content: '';
+position: absolute;
+left: 0;
+width: 3.5rem;
+height: 3.5rem;
+z-index: -1;
+border-radius: 50%;
+opacity: .6;
+background: var(--accent-preset-7);
+animation: blob 6s ease infinite;
+background-clip: padding-box;
+}
+
+@keyframes blob {  
+  0%, 100% {transform: translate(0)}
+  20% {transform: translate(5px,5px);}
+  40% {transform: translate(-5px,5px);}
+  60% {transform: translate(5px,-5px);}
+  80% {transform: translate(-5px,-5px);}
+}
+
+@media (max-width:990px) {
+  .ask::before{
+    top: 10px
+  }
+}
+
+.auto-m {
+  margin: 0 auto;
+}
+
+.mb {
+  margin:  0 auto 3rem;
+}
+
+.flex-div {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15%;
+}
+
+@media (max-width: 480px) {
+ html {
+  font-size: 70%;
+ }
+ .grid-section {
+  grid-template-columns: 1fr;
+  row-gap: 3rem;
+}
+.App::before {
+  width: 80%;
+}
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 80%;
+   }
+   .App::before {
+    width: 60%;
+  }
+}
+
+
+.v-animate {
+animation: vertical .75s ease-out forwards;  
+opacity: 0;
+}
+
+@keyframes vertical {
+  from {
+    opacity: 0;
+    transform: translateY(10rem);
+    filter: blur(.3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.h-animate {
+  animation: horizontal .6s ease-out forwards;  
+  opacity: 0;
+  
+}
+
+
+@keyframes horizontal {
+  from {
+    opacity: 0;
+    transform: translateX(-10rem);
+    filter: blur(.3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
